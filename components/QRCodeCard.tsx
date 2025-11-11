@@ -122,7 +122,16 @@ const QRCard: React.FC<QRCardProps> = ({ textToCopy, src, delay = 0, direction =
 
 const QRCodeCard: React.FC = () => {
   return (
-    <div className="flex justify-center items-center gap-10 min-h-screen bg-transparent">
+    <div
+  className="
+  flex flex-col md:flex-row 
+  justify-center items-center 
+  gap-10 
+  min-h-screen 
+  bg-transparent
+  px-4
+  "
+>
       <QRCard src="/assets/qr.jpg" textToCopy="9113530989@jio" delay={0.1} direction="left" />
       <QRCard src="/assets/qr1.jpg" textToCopy="Govinda Goovindaa" delay={0.3} direction="center" />
       <QRCard src="/assets/qr2.jpg" textToCopy="ravikanth.0989@waaxis" delay={0.5} direction="right" />
